@@ -10,7 +10,8 @@
     <p>ここにEPUBファイルの内容を表示します。</p>
     <script src="https://unpkg.com/epubjs/dist/epub.min.js"></script>
     <script>
-        var book = ePub("path_to_your_epub_file.epub");
+        // EPUBファイルのパスを正しく指定
+        var book = ePub("算数の単語.epub");
         var rendition = book.renderTo("viewer", {
             width: "100%",
             height: "600px"
